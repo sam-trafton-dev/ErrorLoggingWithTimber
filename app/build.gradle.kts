@@ -37,7 +37,7 @@ android {
         }
 
         debug {
-            buildConfigField("boolean", "DEBUG", "false")
+            buildConfigField("boolean", "DEBUG", "true")
         }
     }
     compileOptions {

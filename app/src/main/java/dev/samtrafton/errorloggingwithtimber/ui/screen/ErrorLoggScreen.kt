@@ -1,6 +1,5 @@
 package dev.samtrafton.errorloggingwithtimber.ui.screen
 
-import android.app.Application
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues

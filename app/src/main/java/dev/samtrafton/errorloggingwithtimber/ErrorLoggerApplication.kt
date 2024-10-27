@@ -9,11 +9,13 @@ class ErrorLoggerApplication : Application() {
     override fun onCreate() {
         // Per Timber docs the best time to create a debug tree is at initialization of the application
         super.onCreate()
-        if (Debug.isDebuggerConnected() || android.util.Log.isLoggable("DEBUG", android.util.Log.DEBUG)) {
+        if (BuildConfig.DEBUG) {  // <-- This is more commonly used
             Timber.plant(Timber.DebugTree())
         } else {
             Timber.plant(CrashReportingTree())
         }
+
+        Timber.d("Timber is initialized")
     }
 
     companion object : Application() {
